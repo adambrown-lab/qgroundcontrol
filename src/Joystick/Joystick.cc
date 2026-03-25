@@ -799,7 +799,7 @@ void Joystick::_handleButtons()
             } else if (buttonEventState == ButtonEventUpTransition) {
                 qCDebug(JoystickLog) << "Button up - button:action" << buttonIndex << buttonAction;
                 _executeButtonAction(buttonAction, ButtonEventUpTransition);
-                return;
+                continue;
             }
         }
     }
